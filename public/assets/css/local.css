@@ -6,7 +6,7 @@
     #hero-1621 {
         /* 296px - 364px - top leaving extra space for the navigation */
         /* 60px - 100px bottom */
-        padding: clamp(18.5rem, 25.95vw, 22.75rem) 1rem
+        padding: clamp(16rem, 20vw, 0rem) 1rem
             clamp(3.75rem, 7.82vw, 6.25rem);
         position: relative;
         z-index: 1;
@@ -22,7 +22,7 @@
         align-items: center;
         flex-wrap: wrap;
         /* 140px - 180px */
-        gap: clamp(8.75rem, 13vw, 11.25rem);
+        gap: clamp(8.75rem, 16vw, 13.25rem);
     }
     #hero-1621 .cs-content {
         --cornerWidth: 8.75rem;
@@ -34,6 +34,7 @@
         /* 112px - 144px top & bottom */
         /* 16px - 48px left & right */
         padding: clamp(7rem, 8vw, 9rem) clamp(1rem, 5vw, 3rem);
+        padding: 0;
         display: flex;
         flex-direction: column;
         align-items: center;

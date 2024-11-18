@@ -4,9 +4,9 @@
 @media only screen and (min-width: 0rem) {
     :root {
         /* Add these styles to your global stylesheet, which is used across all site pages. You only need to do this once. All elements in the library derive their variables and base styles from this central sheet, simplifying site-wide edits. For instance, if you want to modify how your h2's appear across the site, you just update it once in the global styles, and the changes apply everywhere. */
-        --primary: #0D92F4;
-        --primaryLight: #77CDFF;
-        --secondary: #F95454;
+        --primary: #ffba19;
+        --primaryLight: #ffd675;
+        --secondary: #001f3f;
         --secondaryLight: #001f3f;
         --headerColor: #1a1a1a;
         --bodyTextColor: #4e4b66;
@@ -31,14 +31,6 @@
         /* prevents padding from affecting height and width */
         box-sizing: border-box;
     }
-    .logo{
-        text-decoration: none;
-        font-size: 1.5rem;
-        font-weight: 600;
-        text-transform: uppercase;
-        color: #fff;
-
-    }
     .cs-topper {
         font-size: var(--topperFontSize);
         font-weight: 700;
@@ -47,7 +39,7 @@
         text-transform: uppercase;
         letter-spacing: 0.1em;
         margin-bottom: 0.25rem;
-        color: var(--primaryLight);
+        color: var(--primary);
         display: block;
     }
     .cs-title {
@@ -81,7 +73,7 @@
         /* prevents padding from adding to the width */
         box-sizing: border-box;
         padding: 0 1.5rem;
-        color: #fff ;
+        color: #1a1a1a;
         background-color: var(--primary);
         display: inline-block;
         position: relative;
@@ -92,7 +84,7 @@
         content: "";
         width: 0%;
         height: 100%;
-        background: var(--primaryLight);
+        background: #000;
         opacity: 1;
         position: absolute;
         top: 0;
@@ -163,7 +155,7 @@
     }
     #cs-navigation .cs-top-bar {
         width: 100%;
-        display: none;
+        display: flex;
         justify-content: center;
         align-items: center;
     }
@@ -173,7 +165,7 @@
         box-sizing: border-box;
         /* 16px - 20px */
         padding: clamp(1rem, 2.5vw, 1.25rem) 1rem;
-        display: none;
+        display: flex;
         justify-content: space-between;
         align-items: center;
         gap: 1rem;
@@ -210,7 +202,7 @@
         /* prevents padding and border from affecting height and width */
         box-sizing: border-box;
         padding: 0;
-        display: none;
+        display: flex;
         justify-content: center;
         align-items: center;
         order: 1;
@@ -374,12 +366,12 @@
         line-height: 1.2em;
         text-decoration: none;
         margin: 0;
-        color: var(--primaryLight);
+        color: var(--headerColor);
         display: inline-block;
         position: relative;
     }
     #cs-navigation .cs-li-link.cs-active {
-        color: var(--primaryLight);
+        color: var(--primary);
     }
     #cs-navigation .cs-li-link:hover {
         color: var(--primary);
@@ -396,6 +388,7 @@
         /* prevents padding from adding to the width */
         box-sizing: border-box;
         padding: 0 1.5rem;
+        color: #1a1a1a;
         background-color: var(--primary);
         display: inline-block;
         position: relative;
@@ -490,7 +483,7 @@
 /* Tablet - 768px */
 @media only screen and (min-width: 48rem) {
     #cs-navigation .cs-button-solid {
-        /* display: block; */
+        display: block;
     }
 }
 /* Dark Mode */
@@ -711,7 +704,7 @@
     }
     #cs-navigation .cs-top-bar {
         width: 100%;
-        display: none;
+        display: flex;
         justify-content: center;
         align-items: center;
     }
@@ -813,7 +806,7 @@
         /* prevents padding from adding to the width */
         box-sizing: border-box;
         padding: 0 3rem;
-        color: #fff;
+        color: #1a1a1a;
         background-color: var(--primary);
         display: inline-block;
         position: relative;
@@ -824,7 +817,7 @@
         content: "";
         width: 0%;
         height: 100%;
-        background: var(--primaryLight);
+        background: #000;
         opacity: 1;
         position: absolute;
         top: 0;
@@ -1022,7 +1015,7 @@
         z-index: 1;
     }
     #footer-1390 .cs-container {
-        /* width: 100%; */
+        width: 100%;
         max-width: 80rem;
         margin: auto;
         display: flex;
